@@ -1,7 +1,17 @@
 package database.tables
 
+import database.tables.LogExercisesTable.autoIncrement
 import org.jetbrains.exposed.dao.id.IntIdTable
+import org.jetbrains.exposed.sql.Table
 
-object LogSetsTable : IntIdTable("log_sets") {
+object LogSetsTable : Table("log_sets") {
 
+    val id = integer("id").autoIncrement()
+
+    val logExerciseID = reference("log_exercise_id", LogExercisesTable.id)
+
+    val setNumber = integer("set_number")
+    val repsCompleted = integer("reps_completed") // add original rep goal?
+    val weightKg  = double("weight_kg")
+    val isPersonalBest = bool("is_personal_best")
 }
