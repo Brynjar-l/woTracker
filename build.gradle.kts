@@ -26,8 +26,9 @@ dependencies {
     /* Exposed */
     implementation("org.jetbrains.exposed:exposed-core:$exposed_version")
     implementation("org.jetbrains.exposed:exposed-dao:$exposed_version")
-
     runtimeOnly("org.jetbrains.exposed:exposed-jdbc:$exposed_version")
+
+    implementation("org.jetbrains.exposed:exposed-kotlin-datetime:$exposed_version")
 
 
     /* Sqlite Driver */
