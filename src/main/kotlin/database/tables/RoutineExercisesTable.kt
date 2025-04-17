@@ -14,7 +14,7 @@ object RoutineExercisesTable : Table("routine_exercises") {
     val notes = varchar("notes", 512).nullable()
     val restBetweenSetsSeconds = integer("rest_seconds_between_sets").nullable()
 
-    val orderIndex = integer("order_index").autoIncrement()
+    val orderIndex = integer("order_index")
 
 
     override val primaryKey = PrimaryKey(routineID, exerciseID, orderIndex)
