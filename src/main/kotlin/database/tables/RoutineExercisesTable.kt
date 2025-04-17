@@ -11,7 +11,7 @@ object RoutineExercisesTable : Table("routine_exercises") {
     val sets = integer("sets")
     val targetReps = integer("target_reps")
 
-    val notes = varchar("notes", 512).nullable()
+    val notes = varchar("notes", TEXT.LIMIT.DOUBLE).nullable()
     val restBetweenSetsSeconds = integer("rest_seconds_between_sets").nullable()
 
     val orderIndex = integer("order_index")
