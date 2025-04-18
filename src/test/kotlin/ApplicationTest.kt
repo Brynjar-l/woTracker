@@ -1,9 +1,9 @@
 package ice.brynj
 
-import ice.brynj.ktor.module
 import io.ktor.client.request.*
 import io.ktor.http.*
 import io.ktor.server.testing.*
+import routes.module
 import kotlin.test.Test
 import kotlin.test.assertEquals
 

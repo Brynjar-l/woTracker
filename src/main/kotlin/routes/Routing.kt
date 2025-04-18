@@ -1,4 +1,4 @@
-package ice.brynj.ktor
+package routes
 
 import io.ktor.http.*
 import io.ktor.server.application.*
